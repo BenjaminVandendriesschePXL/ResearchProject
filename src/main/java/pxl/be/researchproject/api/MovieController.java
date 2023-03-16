@@ -33,7 +33,7 @@ public class MovieController {
     public MovieDTO updateMovie(@PathVariable Long movieId,@RequestBody MovieRequest movieRequest) {
         return movieService.updateMovie(movieId, movieRequest);
     }
-    @DeleteMapping("/{superheroId}")
+    @DeleteMapping("/{movieId}")
     public ResponseEntity<Void> deleteMovie(@PathVariable Long movieId) {boolean deleted = movieService.deleteMovie(movieId);
         return deleted? new ResponseEntity<>(HttpStatus.OK) : new ResponseEntity<>(HttpStatus.BAD_REQUEST);}
 }

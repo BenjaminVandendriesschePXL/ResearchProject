@@ -11,7 +11,7 @@ public record MovieDTO(Long id,
                        List<Long> directorId) {
 
     public MovieDTO(Movie movie) {
-        this(movie.getId(),movie.getTitle(),movie.getReleaseYear(),movie.getGenre(),movie.getDirectorId());
+        this(movie.getId(), movie.getTitle(), movie.getReleaseYear(), movie.getGenre(), movie.getDirectorId());
     }
 
     @Override

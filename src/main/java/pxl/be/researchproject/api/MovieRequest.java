@@ -7,9 +7,9 @@ public class MovieRequest {
     private String title;
     private int releaseYear;
     private String genre;
-    private Long directorId;
+    private List <Long> directorId;
 
-    public MovieRequest(Long id, String title, int releaseYear, String genre, Long directorId) {
+    public MovieRequest(Long id, String title, int releaseYear, String genre, List<Long> directorId) {
         this.id = id;
         this.title = title;
         this.releaseYear = releaseYear;
@@ -53,7 +53,7 @@ public class MovieRequest {
         return directorId;
     }
 
-    public void setDirectorId(Long directorId) {
+    public void setDirectorId(List<Long> directorId) {
         this.directorId = directorId;
     }
 }
